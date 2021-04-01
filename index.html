@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <h2 class="section-title">CSS Selectors</h2>
+  <div class="alert alert-primary">
+    <strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Enim, totam doloremque quod facere aspernatur eum perspiciatis adipisci doloribus, <a class="alert-link" href="./index.html">color & weight changed</a> sit corrupti, tenetur cum dicta odit culpa fugiat voluptatibus. Animi?
+  </div>
+
+  <h4 class="section-title">Inheritance selectors (> vs space)</h4>
+  <div class="chat">
+    <p>chat 1 (.chat > p)</p>
+    <p>chat 2 (.chat p + p)</p>
+    <div class="thread">
+      <p>thread 1 (.chat p)</p>
+      <p>thread 2 (.chat p + p)</p>
+      <p>thread 3 (.chat p + p)</p>
+    </div>
+    <p>chat 3 (.chat > p)</p>
+  </div>
+
+  <h2 class="section-title">Transitions (on hover)</h2>
+  <ul class="list-group">
+    <li class="list-group-item">one</li>
+    <li class="list-group-item">two</li>
+    <li class="list-group-item">three - child selector (border bottom deleted)</li>
+  </ul>
+
+  <h2 class="section-title">Animations</h2>
+  <div class="square"></div>
+</body>
+</html>

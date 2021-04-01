@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.section-title {
+  margin: 10px 0px;
+}
+
+.alert {
+  border: 1px solid transparent;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.alert-primary {
+  border-color: rgb(189, 219, 255);
+  background-color: rgb(206, 228, 255);
+  color: rgb(10, 70, 143);
+}
+
+.alert-link {
+  font-weight: 700;
+}
+
+.alert-primary .alert-link {
+  color: rgb(9, 62, 126);
+}
+
+.chat p {
+  color: rgb(71, 160, 71);
+}
+
+.chat > p {
+  color: rgb(5, 179, 210);
+}
+
+.chat p + p {
+  color: black;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.list-group .list-group-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid grey;
+  transition: background-color 1s ease 0s;
+}
+
+.list-group .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group .list-group-item:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+
+.square {
+  background-color: rgb(255, 82, 82);
+  border: 1px solid rgb(255, 60, 60);;
+  width: 100px;
+  height: 100px;
+  animation: deform 3s;
+}
+
+@keyframes deform {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  50% {
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
